@@ -5,9 +5,9 @@ import pandas as pd
 from itertools import combinations
 from typing import Hashable, List
 
-from rpy2.robjects.packages import importr
-from rpy2.robjects.vectors import FloatVector
-stats = importr('stats')
+#from rpy2.robjects.packages import importr
+#from rpy2.robjects.vectors import FloatVector
+#stats = importr('stats')
 
 
 def match_arg(arg, choices, arg_name):
@@ -285,12 +285,12 @@ def clipper_BH(contrastScore, FDR, nknockoff = None):
             cs_null = np.concatenate((cs_negative, -cs_negative))
             pval = np.array(list(map(lambda x: np.mean(x <= cs_null), contrastScore_nomiss)))
 
-    qvalue = np.array(stats.p_adjust(FloatVector(pval), method = 'BH'))
+    #qvalue = np.array(stats.p_adjust(FloatVector(pval), method = 'BH'))
     re = np.array(list(map(lambda FDR_i: 
                             {"FDR": FDR,
                                 "FDR_control": "BH",
-                                "discovery": np.arange(n)[~idx_na][np.where(qvalue <= FDR_i)[0]],
-                                "q": qvalue},FDR)))
+                                "discovery": np.arange(n)[~idx_na][np.where(qvalue <= FDR_i)[0]]})))
+                                #"q": qvalue},FDR)))
     return re
 
 
