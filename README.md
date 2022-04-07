@@ -15,7 +15,7 @@ Any suggestions on the package are welcome! For suggestions and comments on the 
 
 ## Installation
 
-To install the bleeding-edge version of scGTM, clone this repo:
+To install Clipper-Python, clone this repo:
 
 ```shell
 $ git clone https://github.com/JSB-UCLA/Clipper-Python.git
@@ -24,7 +24,6 @@ and then run
 
 ```shell
 pip install rpy2
-pip install pyreadr
 ```
 to install required package
 
@@ -70,4 +69,4 @@ re = Clipper.clipper(score_exp=exp_d, score_back=back_d, analysis="differential"
 
 ### Example
 
-You can find examples of Clipper usage in different settings in `test_Clipper.py".
+You can find examples of Clipper usage in different settings in "test_Clipper.py".
