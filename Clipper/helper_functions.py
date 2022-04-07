@@ -5,9 +5,9 @@ import pandas as pd
 from itertools import combinations
 from typing import Hashable, List
 
-#from rpy2.robjects.packages import importr
-#from rpy2.robjects.vectors import FloatVector
-#stats = importr('stats')
+from rpy2.robjects.packages import importr
+from rpy2.robjects.vectors import FloatVector
+stats = importr('stats')
 
 
 def match_arg(arg, choices, arg_name):
