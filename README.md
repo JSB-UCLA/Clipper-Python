@@ -23,9 +23,9 @@ $ git clone https://github.com/JSB-UCLA/Clipper-Python.git
 and then run
 
 ```shell
-pip install rpy2
+pip install -r ./Clipper/requirements.txt
 ```
-to install required package
+to install required packages
 
 To import Clipper, you need to first add the directory of the Clipper module into the system path:
 
