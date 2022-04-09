@@ -23,7 +23,7 @@ $ git clone https://github.com/JSB-UCLA/Clipper-Python.git
 and then run
 
 ```shell
-pip install -r Clipper/requirements.txt
+pip install -r ./Clipper/requirements.txt
 ```
 to install required packages
 
